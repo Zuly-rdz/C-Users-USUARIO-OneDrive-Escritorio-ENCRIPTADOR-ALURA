@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Encriptador</title>
+    <meta property="og:title" content="Encriptador Alura">
+    <meta property="og:type" content="photo">
+    <meta property="og:description" content="Encriptador de texto con Javascript">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index-style.css">
+
+  </head>
+
+  <body class="d-md-flex flex-md-row">
+
+    <div class="principal d-flex flex-column">
+
+      <header>
+
+        <img src="./images/Vector.png" class="vector"/>
+
+      </header>
+
+      <div class="d-flex flex-column flex-grow">
+
+        <textarea id="entrada" class="flex-grow" placeholder="Ingrese el texto aquí"></textarea>
+
+      </div>
+      
+      <div class="controles">
+
+        <div class="advertencia d-flex">
+
+          <span class="icon-info"></span><small>Solo letras minúsculas y sin acentos</small>
+
+        </div>
+
+        <div class="d-flex flex-column flex-sm-row">
+
+          <input type="button" class="button flex-sm-grow" value="Codificar" onclick="uiCodificar()"/>
+          <input type="button" class="button flex-sm-grow" value="Decodificar" onclick="uiDecodificar()"/>
+          
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="barra-lateral d-flex flex-column">
+
+      <div class="info d-flex flex-column flex-grow">
+
+        <div class="info-img d-none d-md-block">          
+          <img src="./images/unnamed.jpg">
+        </div>
+
+        <div class="info-txt my-auto">
+
+          <strong>Ningún mensaje fue encontrado</strong><br />
+          <span>Ingresa el texto que desees codificar o decodificar</span>
+          <br>
+          <br>
+          Zuleyma Lopez Rodriguez.
+          <br>
+          <a href="https://github.com/Zuly-rdz" target="_blank" rel="noopener noreferrer"><img src="./images/github-logo-24.png" alt="git"></a>
+          <a href="https://www.instagram.com/rodriiguez126/" target="_blank" rel="noopener noreferrer"><img src="./images/instagram-logo-24.png" alt="instagram"></a>
+
+        </div>
+
+      </div>
+
+      <div id="salida"></div>
+
+      <input type="button" class="button copiar" onclick="uiCopiar()" value="copiar" />
+
+    </div>
+
+    <script src="./js/cryptography.js"></script>
+
+  </body>
+  
+  </html>
